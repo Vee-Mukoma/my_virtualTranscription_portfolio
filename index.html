@@ -109,20 +109,5 @@
         
     </div>
 
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const element = document.querySelector('.container');
-    const options = {
-        margin: 10,
-        filename: 'Vanessa_Mukoma_Portfolio.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-    
-    // Generate PDF and auto-download
-    html2pdf().set(options).from(element).save();
-});
-</script>
 </body>
 </html>
