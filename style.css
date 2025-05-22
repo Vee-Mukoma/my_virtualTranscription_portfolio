@@ -1,0 +1,240 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.about h2 {
+    color: #6a1b9a;
+    font-size: 2em;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.about p {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.1em;
+}
+
+.about img {
+    border-radius: 10px;
+    max-width: 250px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Section */
+.mySkills {
+    background-color: #e1bee7;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.mySkills h3 {
+    color: #4a0072;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.mySkills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.mySkills li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.mySkills li:hover {
+    background-color: #81d4fa;
+    color: white;
+}
+
+/* Portfolio Samples Section */
+.portfolio-samples {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.portfolio-samples h3 {
+    color: #6a1b9a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.portfolio-samples p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.portfolio-samples ol {
+    list-style-position: inside;
+}
+
+.project {
+    background-color: #f3e5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #6a1b9a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h4 {
+    color: #4a0072;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.project h4::before {
+    content: '📜';
+    margin-right: 10px;
+}
+
+.project li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #6a1b9a;
+}
+
+.project audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.theEnd {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theEnd h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.theEnd p {
+    font-size: 1.1em;
+}
+
+.theEnd a {
+    color: #81d4fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.theEnd a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 200px;
+    }
+
+    .mySkills ul {
+        grid-template-columns: 1fr;
+    }
+
+    .project audio {
+        max-width: 100%;
+    }
+}
